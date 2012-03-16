@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<component> 
+
+	<background_color>0x444444</background_color>
+
+	<normal_button_color>0xDDFF00</normal_button_color>
+	<hoover_button_color>0x990000</hoover_button_color>
+	
+	<transition_effect>false</transition_effect>
+
+	<restart_video_first_time_sound_on>false</restart_video_first_time_sound_on>
+	
+	<list>
+		<item>
+			<poster>images/test.jpg</poster>
+			<video>videos/fd-asset-guitar-2.flv</video>
+		    <video_width>210</video_width>
+			<video_height>150</video_height>
+			<video_position_x>20</video_position_x>
+			<video_position_y>200</video_position_y>
+			<sound_position>bottom_middle</sound_position>
+			<replay_position>bottom_right</replay_position>
+			<transition>8</transition>
+			<link window="_blank" >http://activeden.net/user/codelite</link>
+		</item>
+	</list>
+</component>

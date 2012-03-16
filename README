@@ -1,0 +1,128 @@
+El componente depublicidad para teleSUR esta basado en el componente 
+"Lite Video Ads With Posters" ( http://activeden.net/item/lite-video-ads-with-posters/310612 )
+
+Se modificó para poder recibir como parámetros flashvars/QueryString la configuración
+de video y poster. (Técnicamente, se le puede pasar toda la configuración limitada
+a sólo un elemento de video)
+
+Aún puede recibir el parametro xmlpath para indicar un xml que contiene la configuración
+
+----
+Componente original
+----
+Lite Video Ads with Posters
+
+version: v.1.0
+author:  codelite
+----
+
+If you want o use your method of embending just make sure the template.xml is in the same folder with the 
+swf movieclip, or set the 'xmlpath' flashvar to what path the template.xml has.
+
+
+Make sure you set the size of the swf to match the size of the image you are using as background
+
+
+
+[ CUSTOMIZATION ]
+
+In the [3]Deploy folder the customization file is 'template.xml'
+
+
+
+<background_color>
+
+This is the color of component's background.
+
+
+
+<normal_button_color>
+
+The color of the button when mouse is not over it
+
+
+
+<hoover_button_color>
+
+The color of the button when mouse is over it
+
+
+<transition_effect>
+
+If the component is using the transition effect at the end of the movie: set false /true
+
+
+
+<restart_video_first_time_sound_on>
+
+#false: onece you press the sound button on the video keeps playing with sound on
+#true:  the first time the 'sound on' is pressed the video will restart with sound on ( it will never restart on second use and further)
+
+
+
+<list>
+
+This list  works with a singe item up to as many items you want.
+
+If you have more than one video the list will randomly pick one to show at every page loading
+
+
+
+<item>
+	
+The setup of the item
+
+
+	<poster>  the path to the image poster
+
+	<video>   the path to the video
+
+
+		  Support for normal videos and youtube videos
+
+
+		  If you are using an youtube video make sure the format of the link is as follows
+
+		  http://www.youtube.com/v/video_id
+
+
+	<video_width>  the width of the video
+
+	<video_height> the height of the video
+	
+	<video_position_x> the X position of the movie on the stage
+
+	<video_position_y> the Y position of the stage
+
+	<sound_position> the sound button position
+
+			top_left / top_right / top_middle
+                        bottom_left / bottom_right / bottom_middle
+
+
+	<replay_position> the replay button position	
+
+			top_left / top_right / top_middle
+                        bottom_left / bottom_right / bottom_middle	
+		
+
+	<transition> the type of the transition effect ( if activated )
+ 
+		     from 1- 10 or write 'random'
+
+
+	<link> the external link
+
+	       #window - how the links open: _parent ( same page )
+					     _blank  ( new page /tab )
+
+
+
+
+===================================================================================================
+
+
+Enjoy this fine product !
+
+Also you can visit my portofolio: http://activeden.net/user/codelite/portfolio
+			
