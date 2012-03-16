@@ -10,6 +10,7 @@ package codelite.utils
 	/** flash classes **/
 	import flash.display.Sprite;
 	import flash.display.Shape;
+	import flash.display.Bitmap;
 	import flash.events.MouseEvent;
 	import flash.filters.GlowFilter;
 
@@ -19,6 +20,10 @@ package codelite.utils
 
 	public class Button extends Sprite
 	{
+		[Embed(source="../assets/pestania.png")]
+		private var PestaniaBackground:Class;
+
+		private var _bmBackground:Bitmap = new PestaniaBackground();
 		private var _background:Shape  = null; // background
 		private var _label:TextLabel  = null;  // label
 
@@ -32,7 +37,8 @@ package codelite.utils
 			_label.SetFormat(14, Config.NORMAL_BUTTON_COLOR(), true, "left", false, false, 10, 10);
 
 			_background = new Shape();
-			addChild(_background);
+			addChild(_bmBackground);
+			//addChild(_background);
 			addChild(_label);
 
 			ChangeLabel($label);
@@ -80,8 +86,8 @@ package codelite.utils
 			_background.graphics.drawRoundRect(0,0,_label.width+10,_label.height+5, 16);
 			_background.graphics.endFill();
 
-			_label.x = 5;
-			_label.y = _background.height/2 - _label.height/2;
+			_label.x = 2;
+			_label.y = _bmBackground.height - _label.height - 2;
 		}
 
 		/** returns the label **/
